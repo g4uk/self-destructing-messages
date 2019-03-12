@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_03_10_223038) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "message_destructions", force: :cascade do |t|
     t.string "message_id"
     t.string "destruction_method"

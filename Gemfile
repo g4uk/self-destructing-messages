@@ -7,7 +7,7 @@ gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
 
 gem 'activerecord'
-gem 'sqlite3', '~> 1.3.6'
+gem 'pg'
 
 gem 'activesupport'
 gem 'rake'

@@ -1,16 +1,20 @@
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: self_destructing_messages_development
 
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: self_destructing_messages_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: self_destructing_messages_production
+  host: <%= ENV['DATABASE_HOST'] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>

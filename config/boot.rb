@@ -3,7 +3,7 @@ require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 
 require 'rubygems'
 
-require 'sqlite3'
+require 'pg'
 require 'active_record'
 
 require 'sinatra'
