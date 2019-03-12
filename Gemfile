@@ -15,7 +15,7 @@ gem 'sass'
 
 gem 'whenever'
 
-group :test do
+group :development, :test do
   gem 'rack-test'
   gem 'rspec'
   gem 'database_cleaner'

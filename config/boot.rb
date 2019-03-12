@@ -18,6 +18,7 @@ APP_ROOT = File.expand_path('../..', __FILE__)
 
 require File.join(APP_ROOT, 'config', 'configure')
 require File.join(APP_ROOT, 'app', 'app')
+require File.join(APP_ROOT, 'app', 'libs', 'destruction', 'methods', 'base')
 
 Dir[File.join(Sinatra::Application.root, 'app', 'libs', '**/*.rb')].each do |lib_file|
   require lib_file
