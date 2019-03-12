@@ -1,0 +1,12 @@
+<% if @message.present? %>
+  <div class="show-message">
+    <div class="card d-none" id="message-card">
+      <div class="card-body">
+        <%= @message.message %>
+      </div>
+    </div>
+    <%= partial 'message/show_message_form' %>
+  </div>
+<% else %>
+  <a href="/">Go Back</a>
+<% end %>

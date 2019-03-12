@@ -1,0 +1,18 @@
+<% if error_messages.present? %>
+  <div class="alert alert-danger" role="alert">
+    <ul>
+    <% error_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<% if success_messages.present? %>
+  <div class="alert alert-success" role="alert">
+    <ul>
+      <% success_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

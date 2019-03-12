@@ -1,0 +1,23 @@
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-activerecord'
+
+gem 'activerecord'
+gem 'sqlite3', '~> 1.3.6'
+
+gem 'activesupport'
+gem 'rake'
+gem 'sass'
+
+gem 'whenever'
+
+group :test do
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'database_cleaner'
+  gem 'factory_bot'
+end
